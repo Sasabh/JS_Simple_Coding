@@ -1,33 +1,33 @@
 // String reverse while only reversing of individual words
 
 newString =
-    "Innovation is the ability to see change as an opportunity, not a threat.";
+    'Innovation is the ability to see change as an opportunity, not a threat.';
 
 let result = newString
-    .split("")
+    .split('')
     .reverse()
-    .join("")
-    .split(" ")
+    .join('')
+    .split(' ')
     .reverse()
-    .join(" ");
+    .join(' ');
 
 //Another Approach
 var reverseWords = function (s) {
-    let res = "";
-    let word = "";
+    let res = '';
+    let word = '';
     for (let c of s) {
-        if (c === " ") {
+        if (c === ' ') {
             res += word + c;
-            word = "";
+            word = '';
         } else {
             word = c + word;
         }
     }
     return res + word;
 };
-console.log(reverseWords("priya bagde"));
+console.log(reverseWords('priya bagde'));
 
 console.log(
-    "String Reverse with reversion of only individual words: ",
+    'String Reverse with reversion of only individual words: ',
     reverseWords(newString),
 );

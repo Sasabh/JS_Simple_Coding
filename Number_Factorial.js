@@ -16,16 +16,16 @@
 //     output: process.stdout,
 // });
 
-const readLine = require("readline-sync");
+const readLine = require('readline-sync');
 let n;
 
 function getNumberFromUser() {
     try {
-        let readData = readLine.question("Please enter the an Integer: ");
+        let readData = readLine.question('Please enter the an Integer: ');
         n = parseInt(readData);
         if (n !== n || n != readData || n < 0) throw Error();
     } catch (error) {
-        console.log("Only Postive Integers are allowed. Try Again! \n");
+        console.log('Only Postive Integers are allowed. Try Again! \n');
         getNumberFromUser();
     }
 }
