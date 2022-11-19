@@ -23,11 +23,26 @@ function getNumberFromUser() {
     try {
         let readData = readLine.question("Please enter the an Integer: ");
         n = parseInt(readData);
-        if (n !== n || n != readData) throw Error();
+        if (n !== n || n != readData || n < 0) throw Error();
     } catch (error) {
-        console.log("Only Intgers are allowed. Try Again! \n");
+        console.log("Only Postive Integers are allowed. Try Again! \n");
         getNumberFromUser();
     }
 }
 
 getNumberFromUser();
+
+function factorialOfNo(num) {
+    let i = num;
+    let fact = 1;
+    if (n === 0) return 1;
+    else {
+        do {
+            fact *= i;
+            i--;
+        } while (i !== 0);
+    }
+    return fact;
+}
+
+console.log(`Factorial of a ${n} : `, factorialOfNo(n));
