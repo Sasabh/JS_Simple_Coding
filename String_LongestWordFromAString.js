@@ -15,4 +15,12 @@ const findTheLogestWord = (str) => {
     return strArr[maxLenIndex];
 };
 
+function findLongestWordNoExplicitLoop(str) {
+    var longestWord = str.split(' ').sort((a, b) => {
+        return b.length - a.length;
+    });
+    return longestWord[0];
+}
+
 console.log('Longest word in the sentence: ', findTheLogestWord(longString));
+console.log('Longest word in the sentence: ', findLongestWordNoExplicitLoop(longString));
