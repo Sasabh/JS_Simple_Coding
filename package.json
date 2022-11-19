@@ -1,0 +1,31 @@
+{
+    "name": "js_simple_coding",
+    "version": "1.0.0",
+    "description": "Simple Coding Question Implemented with Comments",
+    "main": "",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "format": "prettier --write \"./*.{js,jsx,json,css,ts}\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Sasabh/JS_Simple_Coding.git"
+    },
+    "keywords": [
+        "JavaScript",
+        "Algorithm",
+        "DSA",
+        "Code"
+    ],
+    "author": "Sasabh Gupta",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Sasabh/JS_Simple_Coding/issues"
+    },
+    "homepage": "https://github.com/Sasabh/JS_Simple_Coding#readme",
+    "dependencies": {
+        "prettier": "^2.7.1",
+        "prompt": "^1.3.0",
+        "readline-sync": "^1.4.10"
+    }
+}
